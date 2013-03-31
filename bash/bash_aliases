@@ -1,0 +1,16 @@
+## Apt/dpkg/zomg sanity makers
+alias apt-add='sudo aptitude install'
+alias apt-del='sudo apt-get purge'
+alias apt-update='sudo apt-get update'
+alias apt-upgrade='sudo apt-get upgrade'
+alias apt-search='apt-cache search --names-only'
+alias apt-search-all='apt-cache search'
+alias apt-info='dpkg-query -W -f '"'"'${status} ${package} ${version}\n'"'"' | sed -n '"'"'s/^install ok installed //p'"'"
+
+## Radio
+alias salad='mpg123 -@ http://somafm.com/startstream=groovesalad.pls'
+alias slay='mpg123 -@ http://www.slayradio.org/tune_in.php/128kbps/listen.m3u'
+
+## Misc
+alias gzcat='gunzip -c'
+alias psgrep='ps ax | grep'
