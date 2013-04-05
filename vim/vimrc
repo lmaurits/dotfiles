@@ -1,8 +1,6 @@
 syntax on
 filetype indent plugin on
 
-au FileType python setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
-
 set encoding=utf-8
 set scrolloff=3
 set autoindent
@@ -19,3 +17,9 @@ set backspace=indent,eol,start
 set laststatus=2
 set rnu
 set title
+
+au FileType python setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
+au FileType html setlocal spell spelllang=en_au
+au FileType mail setlocal spell spelllang=en_au
+au FileType tex setlocal spell spelllang=en_au
+au BufRead *.txt setlocal spell spelllang=en_au
