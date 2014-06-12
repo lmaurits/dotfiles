@@ -1,7 +1,7 @@
 URxvt*scrollBar:	false
 URxvt*transparent:	false
 URxvt*shading:		25
-URxvt*font:		terminus-16
+URxvt*font:		xft:terminus-14
 URxvt.inputMethod: ibus
 URxvt.preeditType: OverTheSpot
 
