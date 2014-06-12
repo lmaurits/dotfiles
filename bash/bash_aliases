@@ -3,6 +3,7 @@ alias apt-add='sudo aptitude install'
 alias apt-del='sudo apt-get purge'
 alias apt-update='sudo apt-get update'
 alias apt-upgrade='sudo apt-get upgrade'
+alias apt-icewaseel='sudo apt-get install -t wheezy-backports iceweasel'
 alias apt-search='apt-cache search --names-only'
 alias apt-search-all='apt-cache search'
 alias apt-info='dpkg-query -W -f '"'"'${status} ${package} ${version}\n'"'"' | sed -n '"'"'s/^install ok installed //p'"'"
@@ -14,3 +15,15 @@ alias slay='mpg123 -@ http://www.slayradio.org/tune_in.php/128kbps/listen.m3u'
 ## Misc
 alias gzcat='gunzip -c'
 alias psgrep='ps ax | grep'
+alias retval='echo $?'
+
+# Xscreensaver
+alias lock='xscreensaver-command -lock'
+
+## External screens
+alias vga-on='xrandr --output VGA1 --auto --left-of LVDS1'
+alias vga-on-left='xrandr --output VGA1 --auto --left-of LVDS1'
+alias vga-on-right='xrandr --output VGA1 --auto --right-of LVDS1'
+alias vga-off='xrandr --output VGA1 --off'
+alias hdmi-on='xrandr --output HDMI1 --auto'
+alias hdmi-off='xrandr --output HDMI1 --off'
